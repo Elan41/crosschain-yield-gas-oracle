@@ -1,7 +1,7 @@
 {
   "name": "crosschain-yield-gas-oracle",
   "version": "2.0.0",
-  "description": "x402-paid Node 3: Cross-chain yield aggregator + gas forecaster for Base and Ethereum",
+  "description": ""x402-express": "^1.0.0"  // or whatever the latest/correct version is,
   "type": "module",
   "main": "src/server.js",
   "scripts": {
