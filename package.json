@@ -1,7 +1,7 @@
 {
   "name": "crosschain-yield-gas-oracle",
   "version": "2.0.0",
-  "description": ""x402-express": "^1.0.0"  // or whatever the latest/correct version is,
+  "description": "Crosschain yield and gas oracle",
   "type": "module",
   "main": "src/server.js",
   "scripts": {
