@@ -1,5 +1,5 @@
 # Exported from Render on 2026-04-27T14:45:36Z
-version: "1"
+version: 1
 services:
 - type: web
   name: crosschain-yield-gas-oracle-1
