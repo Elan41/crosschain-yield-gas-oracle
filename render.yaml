@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: crosschain-yield-gas-oracle
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: RECEIVING_WALLET
+        sync: false
+      - key: NETWORK
+        value: base-sepolia
+      - key: BASE_RPC_URL
+        value: https://mainnet.base.org
+      - key: ETH_RPC_URL
+        value: https://eth.llamarpc.com
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /health
+    autoDeploy: true
