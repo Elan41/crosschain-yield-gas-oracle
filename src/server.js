@@ -5,7 +5,7 @@ import { getYieldRates, getGasForecast, SUPPORTED_ASSETS, SUPPORTED_CHAINS } fro
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const RECEIVING_WALLET = process.env.RECEIVING_WALLET;
+const RECEIVING_WALLET = process.env.RECEIVING_WALLET || "0x1db618e6bfc35bd48b91431a55c4948b27e7a539";
 const NETWORK = process.env.NETWORK || "base";
 
 if (!RECEIVING_WALLET) {
