@@ -1,19 +1,15 @@
+# Exported from Render on 2026-04-27T14:45:36Z
+version: "1"
 services:
-  - type: web
-    name: crosschain-yield-gas-oracle
-    runtime: node
-    buildCommand: npm install
-    startCommand: npm start
-    envVars:
-      - key: RECEIVING_WALLET
-        sync: false
-      - key: NETWORK
-        value: base-sepolia
-      - key: BASE_RPC_URL
-        value: https://mainnet.base.org
-      - key: ETH_RPC_URL
-        value: https://eth.llamarpc.com
-      - key: NODE_ENV
-        value: production
-    healthCheckPath: /health
-    autoDeploy: true
+- type: web
+  name: crosschain-yield-gas-oracle-1
+  runtime: node
+  repo: https://github.com/Elan41/crosschain-yield-gas-oracle
+  plan: free
+  envVars:
+  - key: RECEIVING_WALLET
+    sync: false
+  region: oregon
+  buildCommand: yarn install
+  startCommand: node src/server.js
+  autoDeployTrigger: commit
