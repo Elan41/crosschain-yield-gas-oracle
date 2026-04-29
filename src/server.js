@@ -22,15 +22,7 @@ const PRICING = {
 };
 
 // ── Health check ──────────────────────────────────────────────────────────────
-app.get("/health", (_req, res) => {
-  res.json({
-    status: "ok",
-    service: "crosschain-yield-gas-oracle",
-    version: "2.0.0",
-    networks: ["base", "ethereum"],
-    pricing: PRICING,
-  });
-});
+app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
 // ── Service info ──────────────────────────────────────────────────────────────
 app.get("/", (_req, res) => {
